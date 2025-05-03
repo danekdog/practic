@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link href="reg.css" rel="stylesheet">
+</head>
+<body>
+
+<img src="icon.png">
+<h1>Регистрация</h1>
+<div class="box">
+    <ul class="group">
+        <li class="group-item">
+            <p>Как мы можем к вам обращаться?</p>
+            <input type="text" placeholder="Введите имя...">
+        </li>
+        <li class="group-item">
+            <p>Выберите свой факультет:</p>
+            <input type="text" placeholder="Факультет..." list="facult" autocomplete="on">
+            <datalist id="facult">
+                <option>ФКСИС</option>
+                <option>ФИБ</option>
+                <option>ФИТиУ</option>
+                <option>ФКП</option>
+                <option>ФРЭ</option>
+                <option>ИЭФ</option>
+                <option>ВФ</option>
+            </datalist>
+        </li>
+        <li class="group-item" id="pass">
+            <p>Придумайте пароль:</p>
+            <div class="password">
+                <input type="password" id="password-input" placeholder="Введите пароль" name="password" value="123456">
+                <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+            </div>
+
+
+        </li>
+    </ul>
+
+
+    <ul></ul>
+
+    <button><a href="inf_reg.html">Всё готово!</a></button>
+    <script>
+        function show_hide_password(target){
+            var input = document.getElementById('password-input');
+            if (input.getAttribute('type') == 'password') {
+                target.classList.add('view');
+                input.setAttribute('type', 'text');
+            } else {
+                target.classList.remove('view');
+                input.setAttribute('type', 'password');
+            }
+            return false;
+        }
+     </script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+body{
+    background-color: #e8f8ff;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+h1{
+    text-align: center;
+    color: #0F2F64;
+}
+
+ul{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.box{
+    background-color: #BEDAE7;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    height: 60%;
+    border-radius: 13px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.group-item{
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+input{
+    width: 80%;
+    height: 35px;
+    border-radius: 7px;
+}
+p{
+    color: #0F2F64;
+    font-size: 16px;
+}
+
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    background-color: #A3C1CE;
+    color: #0F2F64;
+    border:none;
+    width: 70%;
+    height: 45px;
+    font-size: 20px;
+}
+
+
+
+.password {          
+    position: relative;
+}
+
+.password-control {
+    position: absolute;
+    top: 11px;
+    right: 20%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+    background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+
+a{
+    color: #0F2F64;
+    text-decoration: none;
+}
+
+.text{
+    text-align: center;
+    font-size: 20px;
+    margin:20% 10% ;
+}
+
+.box2{
+    background-color: #BEDAE7;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    height: 50%;
+    border-radius: 13px;
+}
+
+.phone{
+    background-color: #F2FBFF;
+    color: #0F2F64;
+    text-align: center;
+}
