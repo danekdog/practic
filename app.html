@@ -14,7 +14,7 @@
 </div>
 <div class="month" id="monthTitle"></div>
 <div class="days" id="calendar"></div>
-<button id="submitButton" class="submit-button" disabled><a href="many_qestion_nervs.html">Отметить сегодняшний день</a></button>
+<button id="submitButton" class="submit-button" disabled><a href="many_qestion_nervs.html"> Отметить сегодняшний день</a></button>
 <div class="advice">Советы от психолога</div>
 <div class="advm">
     <div class="adv" id="one" data-link="https://www.b17.ru/article/608976/">
@@ -62,9 +62,10 @@
 
         monthTitle.innerText = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' });
         const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
+        const adjustedFirstDay = (firstDay + 6) % 7; // Преобразует воскресенье в 6
         const lastDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
 
-        for (let i = 0; i < firstDay; i++) {
+        for (let i = 0; i < adjustedFirstDay; i++) {
             const emptyDiv = document.createElement('div');
             calendar.appendChild(emptyDiv);
         }
@@ -97,11 +98,11 @@
         window.location.href = 'https://example.com/9';
     });
 
-    // Adding click event to adv elements
+
     document.querySelectorAll('.adv').forEach(adv => {
         adv.addEventListener('click', () => {
             const link = adv.getAttribute('data-link');
-            window.location.href = link; // Redirect to the corresponding URL
+            window.location.href = link;
         });
     });
 
