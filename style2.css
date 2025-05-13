@@ -135,12 +135,12 @@
       font-size: 15px;
       padding: 12px;
     }
-      a {
-    text-decoration: none;
-    color: inherit;
-      }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
