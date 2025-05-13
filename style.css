@@ -20,11 +20,11 @@ body {
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
-    color: #0F2F64; 
+    color: #0F2F64;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    width: 181px; 
+    width: 181px;
     height: 32px;
     background-color: #4F70A8;
     border-radius: 13px;
@@ -55,7 +55,7 @@ body {
     box-sizing: border-box;
     width: 32px;
     height: 32px;
-    margin: 2.5px; 
+    margin: 2.5px;
     color: #0F2F64;
     padding: 10px;
     font-size: 12px;
@@ -79,22 +79,22 @@ body {
     text-align: center;
     background-color: #AFB0B1;
     color: #F5F5F5;
-    border: none; 
+    border: none;
     border-radius: 7px;
     width: 193px;
     height: 36px;
     font-size: 12px;
     line-height: 12px;
     font-weight: 400;
-    white-space: nowrap; 
+    white-space: nowrap;
     text-decoration: none;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
 }
 
 .active-button {
-    background-color: #A3C1CE; 
+    background-color: #A3C1CE;
     color: #0F2F64;
 }
 
@@ -114,22 +114,22 @@ body {
     font-weight: 400;
     color: #0F2F64;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
 }
 
 .advm {
     position: absolute;
     top: 500px;
-    display: flex; 
+    display: flex;
     gap: 10px;
 }
 
 .adv {
-    width: 76px; 
-    height: 94px; 
+    width: 76px;
+    height: 94px;
     border-radius: 5px;
-    padding: 10px; 
+    padding: 10px;
     box-sizing: border-box;
     font-size: 14px;
     line-height: 14px;
@@ -142,7 +142,7 @@ body {
 .up {
     font-size: 14px;
     line-height: 14px;
-    font-weight: 500; 
+    font-weight: 500;
 }
 
 #one:hover, #two:hover, #three:hover, #four:hover {
@@ -177,7 +177,7 @@ p {
 .icon {
     cursor: pointer;
     height: 40px;
-    width: 40px; 
+    width: 40px;
     position: absolute;
     top: 60px;
     right: 28px;
@@ -187,11 +187,11 @@ p {
     position: fixed;
     top: 0;
     right: 0;
-    width: 0; 
+    width: 0;
     height: 100%;
-    overflow: hidden; 
-    transition: width 0.3s; 
-    z-index: 1001; 
+    overflow: hidden;
+    transition: width 0.3s;
+    z-index: 1001;
     background-color: #4F70A8;
     color: white;
 }
@@ -203,7 +203,7 @@ p {
 .close {
     cursor: pointer;
     height: 40px;
-    width: 40px; 
+    width: 40px;
 }
 
 .sidebar a {
@@ -217,11 +217,11 @@ p {
     font-weight: 400;
     position: absolute;
     top: 62px;
-    left: 50%; 
-    transform: translateX(-50%); 
-    text-align: center; 
-    display: flex; 
-    justify-content: center; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     color: #D2EDF9;
 }
@@ -244,7 +244,6 @@ p {
 .into a:last-child {
     margin-bottom: 0;
 }
-
 a {
     text-decoration: none;
     color: inherit;
