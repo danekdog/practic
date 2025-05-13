@@ -1,79 +1,135 @@
-header{
-    background-color: #BEDAE7;
-    text-align: center;
-    padding-left: 35%;
-    display: flex;
-justify-content: space-between;
+body {
+    background-color: #e8f8ff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.mentality{
+header {
+    background-color: #BEDAE7;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Перенос элементов на новую строку при необходимости */
+}
+
+.mentality {
     color: #0F2F64;
     background-color: #4F70A8;
     border-radius: 10px;
-    width: 30%;
-
+    padding: 8px 12px;
+    margin: 5px;
+    width: auto; /* Автоматическая ширина */
+    flex-grow: 1; /* Равномерное распределение места */
 }
-body{
-    background-color: #e8f8ff;
-}
 
-img{
+img {
     display: block;
-    margin-left: auto;
-    margin-right: auto
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
 }
 
-.phone{
-    width: 50%;
-    margin-left: 23%;
+.phone {
+    width: 80%;
+    margin: 20px auto;
     text-align: center;
-    background-color:#F2FBFF;
+    background-color: #F2FBFF;
     border-radius: 5px;
+    padding: 10px;
 }
 
-h1{
+h1 {
     text-align: center;
     color: #0F2F64;
+    margin-top: 20px;
 }
 
-.box{
+.box {
     background-color: #BEDAE7;
     border-radius: 5px;
-    width: 30%;
-    margin-left: 35%;
-    padding-bottom: 1%;
-    padding-top: 1%;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-p{
+p {
     text-align: center;
     color: #0F2F64;
-
 }
 
-.phonee{
+.phonee {
     margin-top: 5%;
 }
 
-button{
+button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
     border-radius: 20px;
     background-color: #4F70A8;
     color: #0F2F64;
-    border:none;
-    width: 50%;
+    border: none;
+    width: 80%;
     height: 40px;
     font-size: 20px;
-    margin-top: 5%;
+    cursor: pointer;
 }
 
-input{
+button:hover {
+    background-color: #3B5998;
+}
+
+input {
     border: none;
     border-radius: 5px;
     background-color: #D2EDF9;
-    height: 70px;
-    width: 70%;
+    height: 50px;
+    width: 100%;
     margin-bottom: 5%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (min-width: 768px) {
+    header {
+        padding-left: 10%;
+    }
+
+    .mentality {
+        width: 25%;
+    }
+
+    .box {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .phone {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        padding-left: 35%;
+    }
+
+    .mentality {
+        width: 20%;
+    }
+
+    .box {
+        width: 30%;
+    }
+
+    .phone {
+        width: 50%;
+    }
 }
