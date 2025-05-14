@@ -183,3 +183,17 @@ a {
 .back-button:hover {
     background-color: #d6dde5;
 }
+.ment {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #0F2F64;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 181px;
+    height: 32px;
+    background-color: #4F70A8;
+    border-radius: 13px;
+    margin: 0px 160px 0px 0px;
+}
