@@ -72,7 +72,7 @@ button {
     background-color: #4F70A8;
     color: #0F2F64;
     border: none;
-    width: 80%;
+
     height: 40px;
     font-size: 20px;
     cursor: pointer;
@@ -132,4 +132,54 @@ input {
     .phone {
         width: 50%;
     }
+}
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 15px;
+    }
+
+    .date {
+        font-size: 18px;
+    }
+
+    .back-button {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .instruction {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .cat-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+
+    .submit-button {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.back-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #e6ebf0;
+    border: 1px solid #c0c9d2;
+    border-radius: 6px;
+    color: #5b6770;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+.back-button:hover {
+    background-color: #d6dde5;
 }
