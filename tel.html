@@ -9,17 +9,92 @@
 </head>
 <body>
 <header>
+  <div class="container">
+    <button class="back-button"><a href="app.html">Назад</a></button>
+  </div>
   <h1 class="mentality">BSUIR mentality</h1>
-  <img src="Group.png" width="7%" height="7%">
+
+  </div>
 </header>
 <body>
-<img src="phone.png" class="phonee">
+<img src="телефончик.svg" class="phonee">
 <h1>Телефон доверия</h1>
 <div class="box"><p>Если вы оказались в трудной и <br>безвыходной ситуации, вы всегда <br>можете обратиться к психологам <br>БГУИР для получения психологической<br> помощи, позвоним по этим номерам:</p>
   <div class="phone"><p>+375 17 293 21 44<br>+375 17 293 85 77<br> <br>
     +375 17 263 03 03 <br> (круглосуточно)</p>
   </div>
 </div>
+
+<script>
+  const openWindow = document.getElementById('openWindow');
+  const sidebar = document.getElementById('sidebar');
+  const closeSidebar = document.getElementById('closeSidebar');
+  const monthTitle = document.getElementById('monthTitle');
+  const calendar = document.getElementById('calendar');
+  const submitButton = document.getElementById('submitButton');
+  const today = new Date();
+  let currentDate = new Date(today.getFullYear(), today.getMonth(), 1);
+  let selectedDay = null;
+
+  function renderCalendar() {
+    calendar.innerHTML = '';
+
+    monthTitle.innerText = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' });
+    const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
+    const adjustedFirstDay = (firstDay + 6) % 7; // Преобразует воскресенье в 6
+    const lastDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+
+    for (let i = 0; i < adjustedFirstDay; i++) {
+      const emptyDiv = document.createElement('div');
+      calendar.appendChild(emptyDiv);
+    }
+
+    for (let day = 1; day <= lastDate; day++) {
+      const dayDiv = document.createElement('div');
+      dayDiv.className = 'day';
+      dayDiv.innerText = day;
+
+      if (day === today.getDate() && currentDate.getMonth() === today.getMonth() && currentDate.getFullYear() === today.getFullYear()) {
+        dayDiv.classList.add('active');
+        dayDiv.classList.add('highlight');
+      }
+
+      dayDiv.addEventListener('click', () => {
+        if (selectedDay) {
+          selectedDay.classList.remove('selected');
+        }
+        selectedDay = dayDiv;
+        dayDiv.classList.add('selected');
+        submitButton.disabled = false;
+        submitButton.classList.add('active-button');
+      });
+
+      calendar.appendChild(dayDiv);
+    }
+  }
+
+  submitButton.addEventListener('click', () => {
+    window.location.href = 'https://example.com/9';
+  });
+
+
+  document.querySelectorAll('.adv').forEach(adv => {
+    adv.addEventListener('click', () => {
+      const link = adv.getAttribute('data-link');
+      window.location.href = link;
+    });
+  });
+
+  openWindow.addEventListener('click', () => {
+    sidebar.style.width = '60%';
+  });
+
+  closeSidebar.addEventListener('click', () => {
+    sidebar.style.width = '0';
+  });
+
+  renderCalendar();
+</script>
 </body>
 <footer>
 
